@@ -7,3 +7,13 @@ then
     echo "#####################################################################################################"
     exit 0
 fi
+
+array=(
+    'ssh::name'
+)
+
+for index in "${array[@]}" ; do
+    SSH="${index%%::*}"
+    NAME="${index##*::}"
+    echo "$SSH - $NAME"
+done
