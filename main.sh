@@ -9,11 +9,14 @@ then
 fi
 
 array=(
-    'ssh::name'
+    'git@github.com:nimitbhargava/git-clone-npm-install.git::git-clone-npm-install'
 )
 
 for index in "${array[@]}" ; do
     SSH="${index%%::*}"
     NAME="${index##*::}"
-    echo "$SSH - $NAME"
+
+    git clone $SSH $TARGET_DIR/$NAME
+    cd $TARGET_DIR/$NAME
+    npm install
 done
