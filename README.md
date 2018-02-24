@@ -10,3 +10,8 @@ For each shh-name pair
 	cd $TARGET_DIR$name
 	npm install
 ```
+
+# Resources
+
+This script wouldn't be possible because of the below source - 
+[Set up associative array with shh-name pair](https://stackoverflow.com/a/17992349/6230772)
