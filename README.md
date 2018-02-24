@@ -15,3 +15,9 @@ For each shh-name pair
 
 This script wouldn't be possible because of the below source - 
 [Set up associative array with shh-name pair](https://stackoverflow.com/a/17992349/6230772)
+
+# To Dos
+
+1. Adding a flag to git clone all in the present directory
+2. Instead of using associative key, just use the name of the project using regex
+3. Making the script more generic - from just npm install to loading another script  
